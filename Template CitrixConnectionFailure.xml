@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-08-03T05:40:37Z</date>
+    <groups>
+        <group>
+            <name>CitrixDeliveryGroup</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template CitrixConnectionFailure</template>
+            <name>Template CitrixConnectionFailure</name>
+            <groups>
+                <group>
+                    <name>CitrixDeliveryGroup</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>ConnectionFailure</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>ConnectionFailure ActiveSessionReconnectDisabled</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureActiveSessionReconnectDisabled</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure ApplicationDisabled</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureApplicationDisabled</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure CommunicationError</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureCommunicationError</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure ConfigurationSetFailure</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureConfigurationSetFailure</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure ConnectionTimeout</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureConnectionTimeout</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure DisallowedProtocol</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDisallowedProtocol</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure GeneralFail</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureGeneralFail</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure LicenseFeatureRefused</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureLicenseFeatureRefused</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure Licensing</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureLicensing</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MachineNotFunctional</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMachineNotFunctional</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MaintenanceMode</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMaintenanceMode</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MaxPerEntitlementInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMaxPerEntitlementInstancesExceeded</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MaxPerMachineInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMaxPerMachineInstancesExceeded</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MaxPerUserInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMaxPerUserInstancesExceeded</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure MaxTotalInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureMaxTotalInstancesExceeded</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure NoDesktopAvailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureNoDesktopAvailable</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure NoMachineAvailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureNoMachineAvailable</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure None</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureNone</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure NoSessionToReconnect</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureNoSessionToReconnect</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure Other</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureOther</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure Refused</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureRefused</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure RegistrationTimeout</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureRegistrationTimeout</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure ResourceUnavailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureResourceUnavailable</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure SessionLimitReached</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureSessionLimitReached</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure SessionPreparation</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureSessionPreparation</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure SpinUpFailed</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureSpinUpFailed</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure Ticketing</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureTicketing</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure Unknown</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureUnknown</key>
+                    <delay>0</delay>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailure ВСЕГО</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailure_all</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last(#1)}&gt;=30 and&#13;
+{last(#2)}&gt;=30</expression>
+                            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+                            <recovery_expression>{last(#1)}&lt;=30 and&#13;
+{last(#2)}&lt;=30</recovery_expression>
+                            <name>ConnectionFailure более 30</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                        <trigger>
+                            <expression>{last(#1)}&gt;=20 and&#13;
+{last(#2)}&gt;=30 and&#13;
+{last(#3)}&gt;=40</expression>
+                            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+                            <recovery_expression>{last(#1)}&lt;=20 and&#13;
+{last(#2)}&lt;=20 and&#13;
+{last(#3)}&lt;=20</recovery_expression>
+                            <name>ConnectionFailure более 40</name>
+                            <priority>HIGH</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+            <macros>
+                <macro>
+                    <macro>{$MACRO}</macro>
+                </macro>
+            </macros>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>CitrixConnectionFailure общее ( Desktop и Applications )</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>BOLD_LINE</drawtype>
+                    <color>E65100</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixConnectionFailure</host>
+                        <key>ConnectionFailure_all</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>

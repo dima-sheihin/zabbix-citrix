@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-08-03T05:40:06Z</date>
+    <groups>
+        <group>
+            <name>CitrixApplications</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template CitrixApplications</template>
+            <name>Template CitrixApplications</name>
+            <groups>
+                <group>
+                    <name>CitrixApplications</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <name>Application динамика запуска</name>
+                    <type>TRAP</type>
+                    <key>StartingInstanceCount</key>
+                    <delay>0</delay>
+                    <history>30d</history>
+                    <trends>180d</trends>
+                    <triggers>
+                        <trigger>
+                            <expression>{sum(14d)}=0</expression>
+                            <name>Applications нет запусков в течении 14 дней</name>
+                            <priority>WARNING</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>

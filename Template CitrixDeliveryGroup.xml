@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-08-03T05:41:40Z</date>
+    <groups>
+        <group>
+            <name>CitrixDeliveryGroup</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template CitrixDeliveryGroup</template>
+            <name>Template CitrixDeliveryGroup</name>
+            <groups>
+                <group>
+                    <name>CitrixDeliveryGroup</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>general</name>
+                </application>
+                <application>
+                    <name>MachineFault</name>
+                </application>
+                <application>
+                    <name>Ресурсы</name>
+                </application>
+                <application>
+                    <name>Сессии</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Resource Memory total</name>
+                    <type>TRAP</type>
+                    <key>citrixdeliverygroup.memory_total</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Ресурсы</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Resource Memory used</name>
+                    <type>TRAP</type>
+                    <key>citrixdeliverygroup.memory_used</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Ресурсы</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Resource CPU avg</name>
+                    <type>TRAP</type>
+                    <key>citrixdeliverygroup.resource_cpu</key>
+                    <delay>0</delay>
+                    <units>%</units>
+                    <applications>
+                        <application>
+                            <name>Ресурсы</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Session count Concurrent</name>
+                    <type>TRAP</type>
+                    <key>ConcurrentSessionCount</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Сессии</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Session count Connected</name>
+                    <type>TRAP</type>
+                    <key>ConnectedSessionCount</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Сессии</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>DeliveryType</name>
+                    <type>TRAP</type>
+                    <key>DeliveryType</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>general</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>CitrixDeliveryGroup-DeliveryType</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>Session count Desktop</name>
+                    <type>TRAP</type>
+                    <key>DesktopStartingInstanceCount</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Сессии</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Session count Disconnected</name>
+                    <type>TRAP</type>
+                    <key>DisconnectedSessionCount</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Сессии</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>LogMachine</name>
+                    <type>TRAP</type>
+                    <key>LogMachine</key>
+                    <delay>0</delay>
+                    <history>10d</history>
+                    <trends>0</trends>
+                    <value_type>TEXT</value_type>
+                    <applications>
+                        <application>
+                            <name>general</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>MachineFault ВСЕГО</name>
+                    <type>TRAP</type>
+                    <key>MachineFault</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>MachineFault FailedToStart</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultFailedToStart</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Обнаружены сервера со статусом FailedToStart</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>MachineFault MaxCapacity</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultMaxCapacity</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Достигнут предел доступных подключений</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>MachineFault None</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultNone</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Обнаружены сервера со статусом None</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>MachineFault StuckOnBoot</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultStuckOnBoot</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Обнаружены сервера со статусом StuckOnBoot</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>MachineFault Unknown</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultUnknown</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Обнаружены сервера со статусом Unknown</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>MachineFault Unregistered</name>
+                    <type>TRAP</type>
+                    <key>MachineFaultUnregistered</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>MachineFault</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last(#1)}&gt;=10 and&#13;
+{last(#2)}&gt;=10</expression>
+                            <name>Более 10 хостов в состоянии Unregistered</name>
+                            <priority>HIGH</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>Более 20 хостов в состоянии Unregistered</name>
+                                    <expression>{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#1)}&gt;=20 and&#13;
+{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#2)}&gt;=20</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger>
+                        <trigger>
+                            <expression>{last(#1)}&gt;=20 and&#13;
+{last(#2)}&gt;=20</expression>
+                            <name>Более 20 хостов в состоянии Unregistered</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                        <trigger>
+                            <expression>{last()}&gt;=1</expression>
+                            <name>Обнаружены сервера со статусом Unregistered</name>
+                            <priority>AVERAGE</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>Более 10 хостов в состоянии Unregistered</name>
+                                    <expression>{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#1)}&gt;=10 and&#13;
+{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#2)}&gt;=10</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>Более 20 хостов в состоянии Unregistered</name>
+                                    <expression>{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#1)}&gt;=20 and&#13;
+{Template CitrixDeliveryGroup:MachineFaultUnregistered.last(#2)}&gt;=20</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>SessionSupport</name>
+                    <type>TRAP</type>
+                    <key>SessionSupport</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>general</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>CitrixDeliveryGroup-SessionSupport</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>LogUser</name>
+                    <type>TRAP</type>
+                    <key>UserLog</key>
+                    <delay>0</delay>
+                    <history>10d</history>
+                    <trends>0</trends>
+                    <value_type>TEXT</value_type>
+                    <applications>
+                        <application>
+                            <name>general</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+            <macros>
+                <macro>
+                    <macro>{$MACRO}</macro>
+                </macro>
+            </macros>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>MachineFault ВСЕГО</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>BOLD_LINE</drawtype>
+                    <color>FF8000</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixDeliveryGroup</host>
+                        <key>MachineFault</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Session count</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>1A7C11</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixDeliveryGroup</host>
+                        <key>ConcurrentSessionCount</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>F63100</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixDeliveryGroup</host>
+                        <key>ConnectedSessionCount</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>2774A4</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixDeliveryGroup</host>
+                        <key>DisconnectedSessionCount</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+    <value_maps>
+        <value_map>
+            <name>CitrixDeliveryGroup-DeliveryType</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>DesktopsOnly</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>AppsOnly</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>DesktopsAndApps</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>CitrixDeliveryGroup-SessionSupport</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>SingleSession</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>MultiSession</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>

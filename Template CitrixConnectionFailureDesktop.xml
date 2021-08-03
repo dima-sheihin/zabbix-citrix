@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-08-03T05:41:21Z</date>
+    <groups>
+        <group>
+            <name>CitrixDeliveryGroup</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template CitrixConnectionFailureDesktop</template>
+            <name>Template CitrixConnectionFailureDesktop</name>
+            <groups>
+                <group>
+                    <name>CitrixDeliveryGroup</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>ConnectionFailure Desktop</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>ConnectionFailureDesktop ActiveSessionReconnectDisabled</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopActiveSessionReconnectDisabled</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop ApplicationDisabled</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopApplicationDisabled</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop CommunicationError</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopCommunicationError</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop ConfigurationSetFailure</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopConfigurationSetFailure</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop ConnectionTimeout</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopConnectionTimeout</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop DisallowedProtocol</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopDisallowedProtocol</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop GeneralFail</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopGeneralFail</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop LicenseFeatureRefused</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopLicenseFeatureRefused</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop Licensing</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopLicensing</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MachineNotFunctional</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMachineNotFunctional</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MaintenanceMode</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMaintenanceMode</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MaxPerEntitlementInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMaxPerEntitlementInstancesExceeded</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MaxPerMachineInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMaxPerMachineInstancesExceeded</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MaxPerUserInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMaxPerUserInstancesExceeded</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop MaxTotalInstancesExceeded</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopMaxTotalInstancesExceeded</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop NoDesktopAvailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopNoDesktopAvailable</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop NoMachineAvailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopNoMachineAvailable</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop None</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopNone</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop NoSessionToReconnect</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopNoSessionToReconnect</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop Other</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopOther</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop Refused</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopRefused</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop RegistrationTimeout</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopRegistrationTimeout</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop ResourceUnavailable</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopResourceUnavailable</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop SessionLimitReached</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopSessionLimitReached</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop SessionPreparation</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopSessionPreparation</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop SpinUpFailed</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopSpinUpFailed</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop Ticketing</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopTicketing</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop Unknown</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktopUnknown</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>ConnectionFailureDesktop ВСЕГО</name>
+                    <type>TRAP</type>
+                    <key>ConnectionFailureDesktop_all</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>ConnectionFailure Desktop</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+            <macros>
+                <macro>
+                    <macro>{$MACRO}</macro>
+                </macro>
+            </macros>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>CitrixConnectionFailure Desktop</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>FF0080</color>
+                    <yaxisside>RIGHT</yaxisside>
+                    <item>
+                        <host>Template CitrixConnectionFailureDesktop</host>
+                        <key>ConnectionFailureDesktop_all</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
